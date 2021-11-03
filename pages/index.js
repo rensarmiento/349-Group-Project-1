@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPhoneAlt, faEnvelope, faMapMarker} from '@fortawesome/free-solid-svg-icons'
 import {FaFacebookF, FaInstagram, FaTwitter, FaYoutube} from 'react-icons/fa'
+import FileUploadComponent from './components/fileUpload.component'
 export default function Home() {
   return (
     <>
@@ -91,13 +92,20 @@ export default function Home() {
               <textarea></textarea>
             </div>
           </div>
+          {/* Start */}
+          
           <div className="col">
             <div className="form-group solo right">
               <button className="primary">Send Message</button>
+              
             </div>
+            
           </div>
         </form>
+        
       </div>
+      
     </>
+    
   )
 }
