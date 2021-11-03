@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPhoneAlt, faEnvelope, faMapMarker} from '@fortawesome/free-solid-svg-icons'
 import {FaFacebookF, FaInstagram, FaTwitter, FaYoutube} from 'react-icons/fa'
 import FileUploadComponent from './components/fileUpload.component'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 export default function Home() {
   return (
     <>
@@ -70,7 +71,7 @@ export default function Home() {
               <input type="tel"></input>
             </div>
           </div>
-          <div className="col">
+          {/* <div className="col">
             <div className="form-group solo">
               <label>What type of website do you need?</label>
               <div id="radio-buttons">
@@ -85,7 +86,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="col">
             <div className="form-group solo">
               <label>Message</label>
@@ -93,18 +94,19 @@ export default function Home() {
             </div>
           </div>
           {/* Start */}
-          
-          <div className="col">
-            <div className="form-group solo right">
-              <button className="primary">Send Message</button>
-              
-            </div>
             
-          </div>
+          
+          {/* <div className="col"> */}
+            {/* <div className="form-group solo right"> */}
+              {/* <button className="primary">Send Message</button> */}
+              
+            {/* </div> */}
+            
+          {/* </div> */}
         </form>
-        
+        <FileUploadComponent/>
       </div>
-    <FileUploadComponent/>  
+    
     </>
     
   )
