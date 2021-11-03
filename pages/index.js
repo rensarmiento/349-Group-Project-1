@@ -91,6 +91,8 @@ export default function Home() {
               <textarea></textarea>
             </div>
           </div>
+          {/*start the upload function */}
+          
           <div className="col">
             <div className="form-group solo right">
               <button className="primary">Send Message</button>
