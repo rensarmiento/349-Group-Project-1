@@ -1,11 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faPhoneAlt, faEnvelope, faMapMarker} from '@fortawesome/free-solid-svg-icons'
-import {FaFacebookF, FaInstagram, FaTwitter, FaYoutube} from 'react-icons/fa'
-import FileUploadComponent from './fileUpload.component'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPhoneAlt,
+  faEnvelope,
+  faMapMarker,
+} from "@fortawesome/free-solid-svg-icons";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+
+import FileUploadComponent from "./components/fileUpload.component";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 export default function Home() {
   return (
     <>
@@ -13,10 +19,10 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    
-      <h1>Contact Us</h1>  
+
+      <h1>Contact Us</h1>
       <p className="sub-title">lorem ipsum</p>
-      
+
       <div id="contact-container">
         {/* <div className="contact-info">
           <h4>
@@ -102,5 +108,5 @@ export default function Home() {
         </form>
       </div>
     </>
-  )
+  );
 }
